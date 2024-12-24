@@ -20,13 +20,13 @@ public class CashBackHackTest {
 
     }
 
-    //@Test
-    public void shouldReturn0ifAmount1000() {
+    @Test
+    public void shouldReturn200ifAmount800() {
         CashbackHackService service = new CashbackHackService();
 
-        int amount = 1000;
+        int amount = 800;
         int actual = service.remain(amount);
-        int expected = 0;
+        int expected = 200;
 
 
         Assert.assertEquals(actual, expected);
@@ -43,4 +43,3 @@ public class CashBackHackTest {
         Assert.assertEquals(actual, expected);
     }
 }
-
